@@ -20,6 +20,9 @@
                 @Html.DisplayNameFor(model => model.Meeting[0].ConductingLeader)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.Meeting[0].Topic)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Meeting[0].Speaker1)
             </th>
             <th>
@@ -40,10 +43,7 @@
                 @Html.DisplayFor(modelItem => item.ConductingLeader)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.OpeningPrayer)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ClosingPrayer)
+                @Html.DisplayFor(modelItem => item.Topic)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Speaker1)
@@ -53,15 +53,6 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Speaker3)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.OpeningHymn)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ClosingHymn)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IntermediateHymn)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |

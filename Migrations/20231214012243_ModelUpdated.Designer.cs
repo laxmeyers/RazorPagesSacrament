@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RazorPagesSacrament.Data;
 
 namespace RazorPagesSacrament.Migrations
 {
     [DbContext(typeof(RazorPagesSacramentContext))]
-    partial class RazorPagesSacramentContextModelSnapshot : ModelSnapshot
+    [Migration("20231214012243_ModelUpdated")]
+    partial class ModelUpdated
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
